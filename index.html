@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-167814992-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-167814992-1");
+
+      document.addEventListener("scroll", () => {
+        if (window.scrollY > 560) {
+          document.getElementById("back-to-top")?.classList.add("active");
+        } else {
+          document.getElementById("back-to-top")?.classList.remove("active");
+        }
+      });
+    </script>
+    <!-- ------------------------ -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="theme-color" content="#000" />
+
+    <!-- Primary Meta Tags -->
+    <title>Caio Teca | Desenvolvedor Front-end</title>
+    <meta name="title" content="Caio Teca" />
+    <meta
+      name="description"
+      content="Desenvolvimento de sites usando as melhores tecnologias do mercado. "
+    />
+    <meta
+      name="keywords"
+      content="criação de sites personalizados,criação de sites profissionais,criação de sites,sites profissionais, sites responsivos, responsivo sites, sites mobile, mobile sites, desenvolvimento de web site, criar sites, criacao de websites, site barato, meu site, quero um site, agencia de sites, sites sao paulo, desenvolvimento de site,porto seguro sites sao paulo, criacao de site sao paulo, sites em sao paulo, desenvolvimento de site, desenvolvimento de site em porto seguro, desenvolvimento de site em sao paulo, desenvolvimento de site em brasília, desenvolvimento de site, desenvolvimento de site em porto seguro, desenvolvimento de sites, desenvolvimento de sites em porto seguro, desenvolvimento de sites em sao paulo, desenvolvimento de sites em porto seguro, desenvolvimento de sites em porto seguro, desenvolvimento de sites em porto seguro, desenvolvedor web, web designer, programador html, wordpress, html5, css, css3, web standards, tableless, seo, acessibilidade, website, freela, freelancer"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Caio Teca - (+244) 948-173-931" />
+    <meta
+      name="copyright"
+      content="Copyright 2020 Caio Teca. Todos os direitos reservados."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://caioteca.dev" />
+    <meta property="og:title" content="Caio Teca | Desenvolvedor Front-end" />
+    <meta
+      property="og:description"
+      content="Desenvolvedor de sites usando as melhores tecnologias do mercado."
+    />
+    <meta property="og:image" content="uploads/images/site.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://caioteca.dev" />
+    <meta
+      property="twitter:title"
+      content="Caio Teca | Desenvolvedor Front-end"
+    />
+    <meta
+      property="twitter:description"
+      content="Desenvolvedor de sites e aplicativos mobile usando as melhores tecnologias do mercado."
+    />
+    <meta property="twitter:image" content="uploads/images/site.jpeg" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icon/apple-touch-icon.png"
+    />
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="icon/site.webmanifest" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet preload"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet preload"
+      as="style"
+    />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- DevIon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/config.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/loanding.css" />
+
+    <!-- Script -->
+    <script data-dapp-detection="">
+      !(function () {
+        let e = !1;
+        function n() {
+          if (!e) {
+            const n = document.createElement("meta");
+            (n.name = "dapp-detected"), document.head.appendChild(n), (e = !0);
+          }
+        }
+        if (window.hasOwnProperty("ethereum")) {
+          if (
+            ((window.__disableDappDetectionInsertion = !0),
+            void 0 === window.ethereum)
+          )
+            return;
+          n();
+        } else {
+          var t = window.ethereum;
+          Object.defineProperty(window, "ethereum", {
+            configurable: !0,
+            enumerable: !1,
+            set: function (e) {
+              window.__disableDappDetectionInsertion || n(), (t = e);
+            },
+            get: function () {
+              if (!window.__disableDappDetectionInsertion) {
+                const e = arguments.callee;
+                (e &&
+                  e.caller &&
+                  e.caller.toString &&
+                  -1 !== e.caller.toString().indexOf("getOwnPropertyNames")) ||
+                  n();
+              }
+              return t;
+            },
+          });
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="sc-gKseQn bbAJWw">
+      <header id="header" class="sc-gsTEea exDHDu">
+        <div class="content">
+          <h1>
+            <a href="index.html" class="text-background"><i class="far fa-code"></i></a>
+          </h1>
+          <nav id="navigation">
+            <ul>
+              <li><a class="active" href="index.html">Início</a></li>
+              <li><a class="" href="#about">Sobre</a></li>
+              <li><a class="" href="#projects">Projetos</a></li>
+            
+              <li><a href="#contact">Suporte</a></li>
+              <li class="to-mobile">
+                <button class="sc-bdfBQB ijjDZm button undefined">
+                  Entre em contato<i class="far fa-long-arrow-right"></i>
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <div class="buttons to-desktop">
+            <a href="/#contact"
+              ><button class="sc-bdfBQB ijjDZm button undefined">
+                Entre em contato
+              </button></a
+            >
+          </div>
+          <div id="toggle" class="to-mobile">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </header>
+      <section id="banner">
+        <div class="content">
+          <div class="text">
+            <h1>Desenvolvimento de aplicações web</h1>
+            <p>
+              Aplicações completas, elegantes, com qualidade de código e
+              otimizadas para o SEO.
+            </p>
+            <div class="buttons">
+              <a href="#projects"
+                ><button class="sc-bdfBQB ijjDZm button undefined">
+                  Ver portfolio
+                </button></a
+              ><a href="#about"
+                ><button class="sc-bdfBQB ijjDZm button no-fill">
+                  Conhecer o dev
+                </button></a
+              >
+            </div>
+          </div>
+          <div class="asset">
+            <img src="static/media/blur.jpeg" alt="Blur" class="blur" />
+            <div class="phone">
+              <img
+                src="static/media/banner-phone.webp"
+                alt="Banner | Caio Teca"
+              /><img
+                src="static/media/banner-phone-2.webp"
+                alt="Banner | Caio Teca"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <div class="arrows"><i></i><i></i><i></i></div>
+        </div>
+      </section>
+      <section id="good-points">
+        <div class="content">
+          <div class="grid-points">
+            <div class="point">
+              <i class="fal fa-lightbulb-on bg-text"></i
+              ><strong>Ideias criativas</strong>
+              <p>
+                Tecnologia e inovação juntos geram uma explosão de ideias
+                únicas, criativas e visualmente bonitas.
+              </p>
+            </div>
+            <div class="point">
+              <i class="fal fa-thumbs-up bg-text"></i
+              ><strong>Boas práticas</strong>
+              <p>
+                Práticas para melhor SEO e otimização de imagens e arquivos são
+                alguns exemplos de práticas que uso.
+              </p>
+            </div>
+            <div class="point">
+              <i class="fal fa-user-astronaut bg-text"></i
+              ><strong>Amigo do usuário</strong>
+              <p>
+                A experiência do usuário é importante para mim. A UX agrega mais
+                valor ao seu projeto.
+              </p>
+            </div>
+            <div class="point">
+              <i class="fal fa-layer-group bg-text"></i
+              ><strong>Design atraente</strong>
+              <p>
+                Cores, elementos e imagens são todos pensados para deixar o seu
+                projeto incrível.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="content">
+          <div class="text">
+            <h1>Sobre o <br /><strong class="bt">desenvolvedor</strong></h1>
+            <p>
+              Sou o Caio, desenvolvedor com maior foco em desenvolvimento Front
+              End. Atualmente trabalho como freelancer com projetos de tamanho
+              pequeno, médio e grande porte. Gosto de estar sempre aprendendo
+              coisas novas e continuar subindo cada dia mais, rumo ao espaço.
+            </p>
+            <a href="/about"
+              ><button class="sc-bdfBQB ijjDZm button undefined">
+                <a href="#"
+                  >Downloand do currículo<i class="far fa-download"></i
+                ></a></button
+            ></a>
+          </div>
+          <div class="asset">
+            <img src="static/media/blur.jpeg" alt="Blur" class="blur" />
+            <div class="techs">
+              <div class="tech"><i class="devicon-sass-plain"></i></div>
+              <div class="tech"><i class="devicon-css3-plain"></i></div>
+              <div class="tech"><i class="devicon-css3-plain"></i></div>
+              <div class="tech"><i class="devicon-html5-plain"></i></div>
+              <div class="tech"><i class="devicon-react-plain"></i></div>
+              <div class="tech"><i class="devicon-bootstrap-plain"></i></div>
+              <div class="tech"><i class="devicon-github-plain"></i></div>
+              <div class="tech"><i class="devicon-github-plain"></i></div>
+              <div class="tech"><i class="devicon-laravel-plain"></i></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="content">
+          <div class="heading">
+            <h1>
+              Um pouco do meu conhecimento <br /><span class="bg-text"
+                >colocado em prática</span
+              >
+            </h1>
+          </div>
+          <div class="grid-projects">
+            <div class="project">
+              <img
+                src="uploads/images/ciam.png"
+                alt="Ciam | Caio Teca"
+              />
+              <div class="shadow">
+                <div class="text">
+                  <div>
+                    <strong class="bg-text">CIAM</strong><span>Website</span>
+                  </div>
+                  <button class="sc-bdfBQB ijjDZm button undefined">
+                    <a href="https://caiodev2020.github.io/ciam.ao/" target="_blank"> </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <img
+                src="uploads/images/x-lab.png"
+                alt="X-lab | Caio Teca"
+              />
+              <div class="shadow">
+                <div class="text">
+                  <div>
+                    <strong class="bg-text">X-lab </strong
+                    ><span>Website</span>
+                  </div>
+                  <button class="sc-bdfBQB ijjDZm button undefined">
+                     <a href="https://caiodev2020.github.io/x-lab/" target="_blank"><i class="far fa-long-arrow-right bg-text"></i></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <img
+                src="uploads/images/editoraazul.png"
+                alt="Editora Azul | Caio Teca"
+              />
+              <div class="shadow">
+                <div class="text">
+                  <div>
+                    <strong class="bg-text">Editora Azul</strong><span>Website</span>
+                  </div>
+                  <button class="sc-bdfBQB ijjDZm button undefined">
+                     <a href="https://editoraazul.com/" target="_blank"><i class="far fa-long-arrow-right bg-text"></i></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <img
+                src="uploads/images/dil.png"
+                alt="Dil.ao | Caio Teca"
+              />
+              <div class="shadow">
+                <div class="text">
+                  <div>
+                    <strong class="bg-text">Dil.ao</strong
+                    ><span>Website</span>
+                  </div>
+                  <button class="sc-bdfBQB ijjDZm button undefined">
+                     <a href="https://dil.ao/" target="_blank"><i class="far fa-long-arrow-right bg-text"></i></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <img
+                src="uploads/images/tecnosociety.png"
+                alt="Tecno Society | Caio Teca"
+              />
+              <div class="shadow">
+                <div class="text">
+                  <div>
+                    <strong class="bg-text">Tecno Society</strong
+                    ><span>Website</span>
+                  </div>
+                  <button class="sc-bdfBQB ijjDZm button undefined">
+                     <a href="https://tecnosociety/" target="_blank"><i class="far fa-long-arrow-right bg-text"></i></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <img
+                src="uploads/images/agromineira.png"
+                alt="Agromineira Angola | Caio Teca"
+              />
+              <div class="shadow">
+                <div class="text">
+                  <div>
+                    <strong class="bg-text">Agromineira Angola</strong
+                    ><span>Website</span>
+                  </div>
+                  <button class="sc-bdfBQB ijjDZm button undefined">
+                     <a href="https://agromineira.com/" target="_blank"><i class="far fa-long-arrow-right bg-text"></i></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#"
+            ><button class="sc-bdfBQB ijjDZm button undefined">
+              Ver todos os projetos
+            </button></a
+          >
+        </div>
+      </section>
+      <section id="contact">
+        <div class="content">
+          <div class="heading">
+            <h1>
+              Chegou a hora de dar o passo inicial para
+              <span class="bg-text">levar seu projeto para o espaço.</span>
+            </h1>
+            <blockquote>
+              <span
+                >“a melhor maneira de prever o futuro <br />é criá-lo”<br /><cite
+                  >- Alan Kay</cite
+                ></span
+              >
+            </blockquote>
+          </div>
+          <div class="flex-contact">
+            <div class="asset">
+              <img src="static/media/contact.svg" alt="Contact | Caio Teca" />
+            </div>
+            <form class="form">
+              <div class="sc-hKgJUU hXuxMB input">
+                <input
+                  type="text"
+                  id="name1630609476457"
+                  name="name"
+                  required=""
+                  autocomplete="off"
+                /><label for="name1630609476457" class="bg-text">Nome</label>
+                <div class="line"></div>
+              </div>
+              <div class="sc-hKgJUU hXuxMB input">
+                <input
+                  type="text"
+                  id="whatsapp1630609476459"
+                  name="whatsapp"
+                  required=""
+                  autocomplete="off"
+                /><label for="whatsapp1630609476459" class="bg-text"
+                  >Whatsapp</label
+                >
+                <div class="line"></div>
+              </div>
+              <div class="sc-hKgJUU hXuxMB input">
+                <input
+                  type="text"
+                  id="email1630609476460"
+                  name="email"
+                  required=""
+                  autocomplete="off"
+                /><label for="email1630609476460" class="bg-text">E-mail</label>
+                <div class="line"></div>
+              </div>
+              <div class="sc-eCstlR ignHFj textarea">
+                <textarea
+                  id="message1630609476461"
+                  name="message"
+                  required=""
+                ></textarea
+                ><label for="message1630609476461" class="bg-text"
+                  >Mensagem</label
+                >
+                <div class="line"></div>
+              </div>
+              <div class="buttons">
+                <a
+                  href="https://wa.link/qcxall"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Ou entre em contato <br />pelo whatsapp:
+                  <strong class="bg-text">(+244) 948-173-931</strong></a
+                ><button
+                  class="sc-bdfBQB ijjDZm button undefined"
+                  type="submit"
+                >
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div></div>
+      <footer class="sc-dlfnuX fqTBNJ">
+        <div class="content">
+          <div class="grid-footer">
+            <div class="box-footer main-box">
+              <strong class="bg-text"
+                >Sempre em <br />busca do próximo nível.</strong
+              >
+              <p>
+                Evoluir de forma contínua é o que busco a cada dia. Juntando o
+                foco e a prática posso trazer as melhores experiências para meus
+                clientes.
+              </p>
+              <div class="socials">
+                <a
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="/http://linkedin.com/in/Caioteca"
+                  ><i class="fab fa-linkedin-in bg-text"></i></a
+                ><a
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="https://github.com/caiodev2020"
+                  ><i class="fab fa-github bg-text"></i></a
+                ><a
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="https://web.facebook.com/caio.teca.2018"
+                  ><i class="fab fa-facebook bg-text"></i></a
+                ><a
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="https://web.facebook.com/caio.teca.2018"
+                  ><i class="fab fa-whatsapp bg-text"></i
+                ></a>
+              </div>
+            </div>
+            <div class="box-footer">
+              <strong>Páginas</strong>
+              <ul>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#contact">Suporte</a></li>
+              </ul>
+            </div>
+            <div class="box-footer">
+              <strong>Contato</strong>
+              <ul>
+                <li><a href="/mailto:caiodev2020@gmail.com">E-mail</a></li>
+                <li><a href="/tel:244948173931">Telefone</a></li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="/https://wa.link/qcxall"
+                    >Whatsapp</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="box-footer">
+              <strong>Serviços</strong>
+              <ul>
+                <li><a href="#next">Sites em geral</a></li>
+                <li><a href="#next">Aplicativos</a></li>
+                <li><a href="#next">API's Rest </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="content">
+            <span
+              >© Copyright 2021 por <strong>Caio Teca</strong>. <br />Todos os
+              direitos reservados.</span
+            ><a href="#banner"><i class="fal fa-arrow-up"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/new.js"></script>
+  </body>
+</html>
