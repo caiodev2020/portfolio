@@ -173,7 +173,7 @@
           <h1>
             <a href="index.html" class="text-background"><i class="far fa-code"></i></a>
           </h1>
-          <nav id="navigation">
+          <nav id="navigation" class="navigation">
             <ul>
               <li><a class="active" href="index.html">Início</a></li>
               <li><a class="" href="#about">Sobre</a></li>
@@ -194,7 +194,8 @@
               </button></a
             >
           </div>
-          <div id="toggle" class="to-mobile">
+          
+          <div id="toggle" class="to-mobile" onclick="toggleElementsById(['toggle', 'navigation', 'body'])">
             <span></span><span></span><span></span>
           </div>
         </div>
@@ -328,7 +329,7 @@
                     <strong class="bg-text">CIAM</strong><span>Website</span>
                   </div>
                   <button class="sc-bdfBQB ijjDZm button undefined">
-                    <a href="https://caiodev2020.github.io/ciam.ao/" target="_blank"> </a>
+                    <a href="https://caiodev2020.github.io/ciam.ao/" target="_blank"><i class="far fa-long-arrow-right bg-text"></i></a>
                   </button>
                 </div>
               </div>
@@ -538,7 +539,7 @@
                 ><a
                   target="_blank"
                   rel="noreferrer noopener"
-                  href="https://web.facebook.com/caio.teca.2018"
+                  href="https://api.whatsapp.com/send?1=pt_BR&phone=948173931"
                   ><i class="fab fa-whatsapp bg-text"></i
                 ></a>
               </div>
@@ -560,8 +561,8 @@
                   <a
                     target="_blank"
                     rel="noreferrer noopener"
-                    href="/https://wa.link/qcxall"
-                    >Whatsapp</a
+                    href="https://api.whatsapp.com/send?1=pt_BR&phone=948173931"
+                    target="_blank">Whatsapp</a
                   >
                 </li>
               </ul>
@@ -569,9 +570,9 @@
             <div class="box-footer">
               <strong>Serviços</strong>
               <ul>
-                <li><a href="#next">Sites em geral</a></li>
-                <li><a href="#next">Aplicativos</a></li>
-                <li><a href="#next">API's Rest </a></li>
+                <li><a href="#">Sites em geral</a></li>
+                <li><a href="#">Aplicativos</a></li>
+                <li><a href="#">Blog</a></li>
               </ul>
             </div>
           </div>
@@ -587,5 +588,6 @@
       </footer>
     </div>
     <script src="static/js/new.js"></script>
+    <script src="static/js/swiper.min.js"></script>
   </body>
 </html>
